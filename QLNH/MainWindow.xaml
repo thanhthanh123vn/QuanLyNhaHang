@@ -1,0 +1,89 @@
+﻿<Window x:Class="QLNH.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu" Height="620" Width="848">
+    <Grid Background="#B7776B">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Thanh trên cùng -->
+        <Grid Background="#8B4513" Height="80" VerticalAlignment="Top" Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0">
+                <Button Width="80" Background="Transparent" FontSize="16" Foreground="White">
+                    <TextBlock Text="☰" VerticalAlignment="Center"/>
+                </Button>
+
+                <Button x:Name="thucDon" Width="130" Background="Transparent" FontSize="16" Foreground="White" Click="View_ThucDon">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/ThucDon.png" Height="24" Margin="0,0,5,0"/>
+                        <TextBlock Text="Thực đơn" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="130" Background="Transparent" FontSize="16" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/NhanVien.png" Height="24" Margin="0,0,5,0"/>
+                        <TextBlock Text="Nhân Viên" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="130" Background="Transparent" FontSize="16" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/BaoCao.png" Height="24" Margin="0,0,5,0"/>
+                        <TextBlock Text="Báo cáo ▼" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Width="130" Background="Transparent" FontSize="16" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/Qua.png" Height="24" Margin="0,0,5,0"/>
+                        <TextBlock Text="Khuyến mãi" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!-- Biểu tượng Wifi -->
+                <Image Source="img/icon wifi.png" Height="40" Margin="20,0,20,0"/>
+
+                <!-- Biểu tượng Trợ giúp -->
+                <Image Source="img/help.png" Height="40" Margin="20,0,20,0"/>
+
+                <!-- Nút tắt nguồn với hình ảnh -->
+                <Button Background="Transparent">
+                    <Image Source="img/power.png" Height="40" Margin="20,0,20,0"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <!-- Các nút chức năng Thêm, Sửa, Xóa -->
+        <Grid Background="#D2B48C" Height="70" VerticalAlignment="Top" Margin="0,80,0,0" Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0">
+                <Button Content="Thêm" Height="40" Width="140"  Click="View_AddFood"/>
+                <Button Content="Sửa" Height="40" Width="140" Margin="20,0,0,0"/>
+                <Button Content="Xóa" Height="40" Width="140" Margin="20,0,20,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
+                <TextBlock Text="(Admin) Võ Thị Thùy Hoa" FontSize="20" Foreground="Black" Margin="0,0,10,0"/>
+                <Button>
+                    <Image Source="img/account.png" Height="40"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <!-- DataGrid hiển thị thực đơn -->
+        <DataGrid x:Name="MenuDataGrid" AutoGenerateColumns="True" Margin="0,150,0,70" HeadersVisibility="Column" CanUserAddRows="False" Grid.ColumnSpan="3" FontSize="17" Background="#C4C4C4">
+          
+        </DataGrid>
+
+        <!-- Thanh phân trang -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="23,0,0,10" Grid.ColumnSpan="2" Height="30" Width="353">
+            <Button Content="⏪" Width="30" HorizontalAlignment="Left"/>
+            <TextBlock Text="Trang" VerticalAlignment="Center" Margin="5,0"/>
+            <TextBox Text="1" Width="30" HorizontalContentAlignment="Center" />
+            <TextBlock Text="trên 7 trang" VerticalAlignment="Center" Margin="5,0"/>
+            <Button Content="⏩" Width="30"/>
+        </StackPanel>
+    </Grid>
+</Window>
