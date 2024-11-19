@@ -60,7 +60,7 @@ namespace QLNH
                 da.Fill(dt);
 
                 foreach (DataRow row in dt.Rows)
-                {
+                {MySqlException: 'Unknown column 'LoaiMon
                     decimal gia = row["Gia"] != DBNull.Value ? Convert.ToDecimal(row["Gia"]) : 0;
 
                     Food item = new Food(

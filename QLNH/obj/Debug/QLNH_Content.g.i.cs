@@ -8,6 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/qua.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("addstaff/icon/avt.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("addstaff/icon/close%20icon.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("addstaff/icon/close_icon.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("addstaff/icon/help-127.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("addstaff/icon/help.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("addstaff/icon/save.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("addstaff/icon/saveicon(1).jpg")]
 
 

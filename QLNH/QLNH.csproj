@@ -59,10 +59,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="addStaff\AddStaff.xaml.cs">
+      <DependentUpon>AddStaff.xaml</DependentUpon>
+    </Compile>
     <Compile Include="services\AddFoodDao.cs" />
     <Page Include="AddFood.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addStaff\AddStaff.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -133,9 +140,17 @@
   <ItemGroup>
     <Resource Include="img\Qua.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="addStaff\icon\avt.png" />
+    <Resource Include="addStaff\icon\close icon.png" />
+    <Resource Include="addStaff\icon\close_icon.jpg" />
+    <Resource Include="addStaff\icon\help-127.png" />
+    <Resource Include="addStaff\icon\help.png" />
+    <Resource Include="addStaff\icon\save.png" />
+    <Resource Include="addStaff\icon\saveIcon%281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
