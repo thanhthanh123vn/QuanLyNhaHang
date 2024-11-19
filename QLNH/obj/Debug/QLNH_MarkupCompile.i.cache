@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\obj\Debug\
+=======
+D:\QuanLyNhaHang\QLNH\obj\Debug\
+>>>>>>> 26761c9e6f42891350c202606030972028a15046
 QLNH
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\App.xaml
 31300457682
 
 12-655665824
 14104345329
 AddFood.xaml;addStaff\AddStaff.xaml;MainWindow.xaml;
+=======
+D:\QuanLyNhaHang\QLNH\App.xaml
+71438328212
 
-False
+17-455197618
+14104345329
+AddFood.xaml;MainWindow.xaml;Views\DangNhap.xaml;Views\FoodView.xaml;Views\PhuVu.xaml;Views\PhuVuView.xaml;Views\ThuNgan.xaml;
+>>>>>>> 26761c9e6f42891350c202606030972028a15046
+
+True
 

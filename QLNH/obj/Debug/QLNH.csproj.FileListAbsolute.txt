@@ -21,6 +21,7 @@ C:\QLNH\QLNH\QLNH\bin\Debug\MySql.Data.xml
 C:\QLNH\QLNH\QLNH\obj\Debug\QLNH.csproj.Up2Date
 C:\QLNH\QLNH\QLNH\obj\Debug\AddFood.baml
 C:\QLNH\QLNH\QLNH\obj\Debug\AddFood.g.cs
+<<<<<<< HEAD
 C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\bin\Debug\QLNH.exe.config
 C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\bin\Debug\QLNH.exe
 C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\bin\Debug\QLNH.pdb
@@ -44,3 +45,37 @@ C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\obj\Debug\QLNH.exe
 C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\obj\Debug\QLNH.pdb
 C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\obj\Debug\AddStaff.g.cs
 C:\Users\THAI\Source\Repos\QuanLyNhaHang\QLNH\obj\Debug\QLNH_MarkupCompile.lref
+=======
+D:\QuanLyNhaHang\QLNH\bin\Debug\QLNH.exe.config
+D:\QuanLyNhaHang\QLNH\bin\Debug\QLNH.exe
+D:\QuanLyNhaHang\QLNH\bin\Debug\QLNH.pdb
+D:\QuanLyNhaHang\QLNH\bin\Debug\System.Memory.dll
+D:\QuanLyNhaHang\QLNH\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\QuanLyNhaHang\QLNH\bin\Debug\System.Numerics.Vectors.dll
+D:\QuanLyNhaHang\QLNH\bin\Debug\System.Buffers.dll
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH.csproj.AssemblyReference.cache
+D:\QuanLyNhaHang\QLNH\obj\Debug\AddFood.baml
+D:\QuanLyNhaHang\QLNH\obj\Debug\MainWindow.baml
+D:\QuanLyNhaHang\QLNH\obj\Debug\AddFood.g.cs
+D:\QuanLyNhaHang\QLNH\obj\Debug\MainWindow.g.cs
+D:\QuanLyNhaHang\QLNH\obj\Debug\App.g.cs
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH_MarkupCompile.cache
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH.g.resources
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH.Properties.Resources.resources
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH.csproj.GenerateResource.cache
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH.csproj.CoreCompileInputs.cache
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH.csproj.Up2Date
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH.exe
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH.pdb
+D:\QuanLyNhaHang\QLNH\obj\Debug\QLNH_MarkupCompile.lref
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\DangNhap.baml
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\ThuNgan.baml
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\DangNhap.g.cs
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\ThuNgan.g.cs
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\PhuVuView.baml
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\PhuVu.g.cs
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\PhuVuView.g.cs
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\PhuVu.baml
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\FoodView.g.cs
+D:\QuanLyNhaHang\QLNH\obj\Debug\Views\FoodView.baml
+>>>>>>> 26761c9e6f42891350c202606030972028a15046
