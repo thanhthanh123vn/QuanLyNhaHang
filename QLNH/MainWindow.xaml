@@ -1,16 +1,20 @@
 ﻿<Window x:Class="QLNH.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Menu" Height="622" Width="850">
-    <Grid Background="#FFC0CB">
+        Title="Menu" Height="622" Width="856">
+    <Grid Background="#ccc">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="256*"/>
+            <RowDefinition Height="47*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="146*"/>
-            <ColumnDefinition Width="699*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="352*"/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
 
         <!-- Thanh trên cùng -->
-        <Grid Background="#8B4513" Height="80" VerticalAlignment="Top" Grid.ColumnSpan="3">
+        <Grid Background="#8B4513" Height="80" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Height="80" Width="838">
                 <Button Width="80" Background="Transparent" FontSize="16" Foreground="White">
                     <TextBlock Text="☰" VerticalAlignment="Center"/>
@@ -51,21 +55,21 @@
                 <Image Source="img/help.png" Height="40" Margin="20,0,20,0"/>
 
                 <!-- Nút tắt nguồn với hình ảnh -->
-                <Button Background="Transparent">
+                <Button Background="Transparent" Click="power_Click">
                     <Image Source="img/power.png" Height="40" Margin="20,0,20,0"/>
                 </Button>
             </StackPanel>
         </Grid>
 
         <!-- Các nút chức năng Thêm, Sửa, Xóa -->
-        <Grid Background="#D2B48C" Height="70" VerticalAlignment="Top" Margin="0,80,0,0" Grid.ColumnSpan="3">
+        <Grid Background="#D2B48C" Height="70" VerticalAlignment="Top" Margin="0,80,0,0" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0">
-                <Button Content="Thêm" Height="40" Width="140"  Click="View_AddFood"/>
+                <Button x:Name="buttonThem" Content="Thêm" Height="40" Width="140"  Click="View_AddFood"/>
                 <Button x:Name="buttonSua" Content="Sửa" Height="40" Width="140" Margin="20,0,0,0" Click="buttonSua_Click"/>
-                <Button Content="Xóa" Height="40" Width="140" Margin="20,0,20,0"/>
+                <Button x:Name="ButtonXoa" Content="Xóa" Height="40" Width="140" Margin="20,0,20,0" Click="buttonXoa_Click"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0">
-                <TextBlock Text="(Admin) Võ Thị Thùy Hoa" FontSize="20" Foreground="Black" Margin="0,0,10,0"/>
+                <TextBlock  x:Name="accountUser" Text="" FontSize="20" Foreground="Black" Margin="0,0,10,0"/>
                 <Button>
                     <Image Source="img/account.png" Height="40"/>
                 </Button>
@@ -76,10 +80,10 @@
         <DataGrid 
                 x:Name="MenuDataGrid" 
                 AutoGenerateColumns="False" 
-                Margin="0,150,0,101" 
+                Margin="0,150,0,73" 
                 HeadersVisibility="Column" 
                 CanUserAddRows="False" 
-                Grid.ColumnSpan="3" 
+                Grid.ColumnSpan="2" 
                 FontSize="16" 
                 Background="#F5F5F5" 
                 BorderBrush="#CCCCCC" 
@@ -90,7 +94,7 @@
                 VerticalGridLinesBrush="#D3D3D3"
                 GridLinesVisibility="All"
                 ColumnHeaderHeight="40"
-                IsReadOnly="True">
+                IsReadOnly="True" Grid.RowSpan="2">
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader">
                     <Setter Property="Background" Value="#FFC0CB" />
@@ -157,12 +161,12 @@
 
         </DataGrid>
 
-        <StackPanel x:Name="ActionPanel"  Background="#ccc" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,505,0,0" Height="101" Width="846" Grid.ColumnSpan="2">
+        <StackPanel x:Name="ActionPanel"  Background="#ccc" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,21,0,0" Height="73" Width="846" Grid.ColumnSpan="2" Grid.Row="1">
             <Button x:Name="buttonUpdateSua" Content="Cập Nhập " Width="100" Height="40" Margin="10 0 20 0" Click="buttonUpdateSua_Click"/>
             <Button x:Name="ButtonHuySua" Content="Hủy " Width="100" Height="40" Click="ButtonHuySua_Click"/>
         </StackPanel>
         <!-- Thanh phân trang -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,557,0,0" Height="22" Width="239" Grid.Column="1">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,45,0,0" Height="22" Width="239" Grid.Column="1" Grid.Row="1">
             <Button Content="⏪" Width="20" Height="20" HorizontalAlignment="Left"/>
             <TextBlock Text="Trang" VerticalAlignment="Center" Margin="5,0"/>
             <TextBox  Height="20" Text="1" Width="20" HorizontalContentAlignment="Center" />

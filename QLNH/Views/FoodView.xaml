@@ -1,0 +1,17 @@
+﻿<Window x:Class="QLNH.Views.FoodView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLNH.Views"
+        mc:Ignorable="d"
+        Title="FoodView" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="77*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Left" Height="252" Margin="10,10,0,0" VerticalAlignment="Top" Width="518" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

@@ -59,7 +59,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Object\User.cs" />
     <Compile Include="services\AddFoodDao.cs" />
+    <Compile Include="Views\DangNhap.xaml.cs">
+      <DependentUpon>DangNhap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FoodView.xaml.cs">
+      <DependentUpon>FoodView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhuVu.xaml.cs">
+      <DependentUpon>PhuVu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PhuVuView.xaml.cs">
+      <DependentUpon>PhuVuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThuNgan.xaml.cs">
+      <DependentUpon>ThuNgan.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddFood.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,6 +97,26 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\DangNhap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FoodView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PhuVu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PhuVuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ThuNgan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Object\Food.cs" />
